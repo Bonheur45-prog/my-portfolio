@@ -1,0 +1,90 @@
+.render-the-account-wide-view{
+    position: fixed;
+    inset: 0 0 0 0;
+    background: grey;
+    display: none;
+    transition: opacity .3s ease-in;
+    opacity: 0;
+}
+
+.render-the-account-wide-view.active{
+    display: block;
+    opacity: 1;
+}
+.account-wide-view-container{
+    display: grid;
+    max-width: 800px;
+    min-width: 500px;
+    position: absolute;
+    background: rgb(71, 70, 70);
+    grid-template-columns: 350px 1fr;
+    box-shadow: 0 0 5px grey, 0 0 5px grey;
+    top: 30px;
+    right: 200px;
+    padding: 10px;
+    color: white;
+}
+.account-wide-view-container .cancel-button{
+    font-size: 27px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 3px;
+}
+.account-wide-view-container .cancel-button:hover{
+    color: red;
+}
+.left-section{
+    display: flex;
+    flex-direction: column;
+}
+.left-section img{
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.account-name-email-role{
+    display: flex;
+    flex-direction: column;
+}
+.account-name-email-role p{
+    font-size: 14px;
+    color: orangered;
+    font-weight: bolder;
+}
+.account-name-email-role p span{
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.right-section{
+    padding-left: 10px;
+    margin-top: 20px;
+    border-left: 2px solid orangered;
+}
+.right-section .addresses-header{
+    background: orangered;
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.user-social-medias ul{
+    margin-top: 10px;
+    list-style: none;
+}
+.user-social-medias ul li{
+    margin: 3px;
+}
+.user-social-medias ul li a{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.user-social-medias ul li a:hover{
+    background: rgb(19, 18, 18);
+    color: orangered;
+}
+.user-social-medias ul li a img{
+    width: 25px;
+    margin-right: 20px;
+}

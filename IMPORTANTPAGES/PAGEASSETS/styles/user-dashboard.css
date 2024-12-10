@@ -1,0 +1,95 @@
+.sidebar-nav{
+    width: 300px;
+    background: rgba(0, 0, 0, 0.918);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.upper-wraper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account-picture{
+    border: 3px solid orangered;
+    box-shadow: 0 0 10px orange, 0 0 10px orange;
+    border-radius: 50%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+.account-picture img{
+    width: 100%;
+    border-radius: 50%;
+}
+.upper-wraper .account-name{
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.upper-wraper .account-role span{
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+.middle-wraper{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.middle-wraper a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: white;
+    width: 90%;
+    height: 45px;
+    padding: 0px 13px;
+    transition: .3s;
+}
+.middle-wraper a:hover{
+    border: 1.5px solid orangered;
+    background: rgba(0, 0, 0, 0.959);
+}
+.middle-wraper a img{
+    width: 40px;
+}
+.middle-wraper a .counter{
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 0 2px;
+    color: orangered;
+    min-width: 10%;
+    height: 70%;
+    border-radius: 50%;
+}
+.middle-wraper a .counter.hide-counter{
+    visibility: hidden;
+}
+
+.main-wraper{
+    margin-left: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.welcome-user{
+    width: 900px;
+    height: 500px;
+    background: black;
+    color: rgb(15, 233, 15);
+    font-size: 30px;
+    font-family: algerian, 'Courier New', Courier, monospace;
+}

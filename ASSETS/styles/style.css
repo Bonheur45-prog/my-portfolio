@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background: #31413E;
+}
+.header{
+    position: fixed;
+    height: 70px;
+    background: rgb(44, 44, 44);
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+.mobile-menu{
+    position: absolute;
+    left: 15px;
+    width: 80px;
+    visibility: hidden;
+}
+.mobile-menu span{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.mobile-menu span:hover{
+    text-shadow: 1px 2px grey;
+}
+
+.logo{
+    margin-left: 20px;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.logo:hover{
+    color: rgb(243, 71, 4);
+    text-shadow: 0 0 15px rgb(243, 71, 4),
+                 0 0 30px rgb(243, 71, 4);
+    transform: scale(1.03);
+}
+.logo span{
+    color: rgb(243, 71, 4);
+}
+.logo span:hover{
+    color: white;
+}
+.navbar a{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0 20px;
+    letter-spacing: 0.5px;
+    transition: 0.2s ease;
+}
+.navbar a:hover,
+.navbar .active{
+    color: rgb(243, 71, 4);
+    border-bottom: 2px solid rgb(243, 71, 4);
+}
+.login-signup{
+    border: 2px solid rgb(243, 71, 4);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 20px;
+    margin-right: 20px;
+    letter-spacing: 0.7px;
+    transition: 0.3 ease;
+}
+.login-signup a{
+    color: white;
+}
+.login-signup:hover{
+    background: rgb(243, 71, 4);
+    box-shadow: 0 0 10px rgb(243, 71, 4),
+                 0 0 20px rgb(243, 71, 4);
+}
+.main-wraper{
+    width: 100%;
+    height: 500px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 80px 20px 0;
+}
+.main-wraper-content{
+    color: white;
+    max-width: 600px;
+    padding: 15px;
+}
+.main-wraper-content h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.main-wraper-content h1{
+    font-size: 50px;
+}
+.main-wraper-content p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.main-wraper-content span{
+    color: rgb(243, 71, 4);
+}
+.img-container img{
+    border-radius: 50%;
+    width: 450px;
+    border: 3px solid yellowgreen;
+    animation: colorchangingborder 3s infinite;
+}
+@keyframes colorchangingborder{
+    0% {
+        border-color: orangered;
+        box-shadow: 0 0 40px rgb(243, 71, 4),
+                    0 0 35px rgb(243, 71, 4);
+    }
+    33% {
+        border-color: rgb(4, 68, 243);
+        box-shadow: 0 0 20px rgb(4, 68, 243),
+                    0 0 40px rgb(4, 68, 243);
+    }
+    66% {
+        border-color: greenyellow;
+        box-shadow: 0 0 50px greenyellow,
+                    0 0 50px greenyellow;
+    }
+    100% {
+        border-color: orangered;
+        box-shadow: 0 0 40px rgb(243, 71, 4),
+                    0 0 40px rgb(243, 71, 4);
+    }
+}
+.greeting{
+    animation: greeting 0.8s ease-in;
+}
+@keyframes greeting{
+    from{
+        transform: translateX(-300px);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+@keyframes showHomeContent{
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+.main-wraper h1,
+.main-wraper p{
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showHomeContent 0.6s 0.7s ease-in-out 1 forwards;
+}
+.main-wraper p{
+    animation-delay: 1s;
+}
+
+/*the footer styles*/
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px 0;
+    background: rgb(41, 39, 39);
+}
+.social-networks{
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.social-networks a{
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    border: 2px solid orangered;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    margin: 0 10px;
+    box-shadow: 0 0 15px rgb(243, 71, 4),
+                0 0 15px rgb(243, 71, 4);
+    transition: 0.4s ease;
+}
+.social-networks a:hover{
+    transform: translateY(-7px);
+}
+.social-networks a img {
+    width: 25px;
+    height: 25px;
+}
+footer p{
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*signup and login form styles*/
+.login-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    visibility: hidden; 
+    right: 0;
+    top: 80px;
+    width: 300px;
+    position: fixed;
+    background: rgba(19, 17, 17, 0.911);
+    margin-right: 30px;
+    padding: 20px;
+    z-index: 8;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-form-container span{
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    right: 5px;
+    top: 0px;
+    cursor: pointer;
+}
+.login-form-container span:hover{
+    color: orangered;
+}
+.login-form-container h1{
+    color: orangered;
+    background: white;
+    border-radius: 8px;
+    width: 80%;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-form-container form{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.form-input-control{
+    position: relative;
+}
+.login-form-container form .form-input-control input{
+    height: 30px;
+    padding-left: 10px;
+    font-size: 18px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.007);
+    color: white;
+    border: none;
+    border-bottom: 2px solid orange;
+    margin-bottom: 20px;
+}
+.form-input-control img{
+    width: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 0;
+}
+.form-input-control .error-level {
+    position: absolute;
+    font-size: 12px;
+    top: 33px;
+    visibility: hidden;
+}
+form .login-error{
+    font-size: 16px;
+    position: absolute;
+    color: red;
+    top: 65px;
+    visibility: hidden;
+}
+.form-input-control.error .error-level{
+    visibility: visible;
+    color: red;
+}
+.login-form-container form button{
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bol;
+    color: white;
+    background: orangered;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: "background" .3s;
+}
+.login-form-container form button:hover{
+    color: rgb(223, 199, 199);
+    background: rgb(235, 52, 6);
+}
+.login-form-container p{
+    color: white;
+    font-size: 20px;
+}
+.login-form-container p a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bolder;
+}
+.login-form-container h3{
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+}
+.social-medias-tosignIn{
+    display: flex;
+    align-items: center;
+}
+.social-medias-tosignIn a{
+    margin: 2px 5px;
+}
+.social-medias-tosignIn a img{
+    width: 30px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: white;
+}
+.social-medias-tosignIn a img:hover{
+    box-shadow: 0 0 10px orangered, 0 0 10px orangered;
+}
+
+/*styles for the sidebar navigation on Mobile version*/
+.sidebar-menu{
+    position: fixed;
+    width: 300px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #31413ed5;
+    box-shadow:  0 0 8px black;
+    z-index: 15;
+    visibility: hidden;
+}
+.sidebar-menu .my-logo{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0 5px black;
+}
+.sidebar-menu .my-logo:hover{
+    color: rgb(243, 71, 4);
+    text-shadow: 0 0 15px rgb(243, 71, 4),
+                 0 0 30px rgb(243, 71, 4);
+    transform: scale(1.03);
+}
+.sidebar-menu .my-logo span{
+    color: orangered;
+}
+.sidebar-menu .my-logo span:hover{
+    color: white;
+}
+.sidebar-menu ul{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.sidebar-menu ul li{
+    padding: 10px 30px;
+    margin: 4px 0px;
+}
+.sidebar-menu ul li:hover{
+    border-left: 2px solid white;
+    box-shadow: 0 0 3px rgb(36, 35, 35);
+    background: #31413ee0;
+}
+.sidebar-menu ul li a{
+    color: white;
+    font-size: 25px;
+}
+.hide-nav-bar{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+.hide-nav-bar:hover{
+    color: orangered;
+}
+/*start of responsive*/
+@media (max-width: 600px){
+    .navbar{
+        display: none;
+    }
+    .mobile-menu{
+        position: relative;
+        visibility: visible;
+    }
+    .login-signup{
+        padding: 3px 10px;
+        margin-right: 5px;
+    }
+    .header{
+        height: 50px;
+    }
+}
+
+@media (max-width: 900px){
+    .navbar{
+        display: none;
+    }
+    .mobile-menu{
+        position: relative;
+        visibility: visible;
+    }
+    .login-signup{
+        padding: 3px 10px;
+        margin-right: 5px;
+    }
+    .header{
+        height: 50px;
+    }
+}
+/*home page responsive*/
+@media (max-width: 600px ){
+    .main-wraper{
+        display: flex;
+        padding-bottom: 50vh;
+    }
+    .main-wraper-content{
+        position: absolute;
+        z-index: 3;
+        width: 90%;
+        top: 80%;
+        background-color: #31413ee0;
+    }
+    .main-wraper-content h2{
+        font-size: 45px;
+    }
+    .main-wraper-content h1{
+        font-size: 30px;
+    }
+    .main-wraper-content p{
+        font-size: 16px;
+    }
+    .img-container{
+        position: relative;
+    }
+    .img-container img{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+/*@media (max-width: 900px ){
+    .main-wraper-content h2{
+        font-size: 55px;
+    }
+    .main-wraper-content h1{
+        font-size: 28px;
+    }
+    .main-wraper-content p{
+        font-size: 19px;
+    }
+    .img-container{
+        position: relative;
+    }
+    .img-container img{
+        border-top-left-radius: 50%;
+        border-top-right-radius: 0;
+    }
+}*/

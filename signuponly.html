@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Signup html</title>
+    <link rel="stylesheet" href="ASSETS/styles/login-signup.css">
+</head>
+<body onload="signUpWriter()">
+    <main class="login-signup-page-container">
+        <div class="pagecontent">
+            <h1>Software Development &
+                <span>Development</span>
+            </h1>
+            <p>
+            </p>
+            <button class="joinme">FOLLOW ME</button>
+        </div>
+        <div class="login-form-container">
+            <h1>SignUp Here</h1>
+            <form action="" id="form">
+                <div class="form-input-control">
+                   <input type="email" name="userEmail" placeholder="Enter Email Here" id="email">
+                    <p class="error-level">error message</p> 
+                </div>
+                
+                <div class="form-input-control">
+                    <input type="text" name="userName" placeholder="User Name" id="username">
+                    <p class="error-level">error message</p>
+                </div>
+
+                <div class="form-input-control">
+                    <input type="password" name="userPassword" placeholder="Enter Password Here" id="password">
+                    <img src="ASSETS/Icons/iris1.png" class="togglePasswordVisibility" alt="">
+                    <p class="error-level">error message</p>
+                </div>
+                <div class="form-input-control">
+                    <input type="password" name="userPassword" placeholder="Confirm your Password Here" id="password-conf">
+                    <img src="ASSETS/Icons/iris1.png" class="togglePasswordVisibility" alt="">
+                    <p class="error-level">error message</p>
+                </div>
+
+                <button type="submit">Create Account</button>
+            </form>
+        
+            <h3>SignUp with</h3>
+            <div class="social-medias-tosignIn">
+                <a href=""><img src="ASSETS/Icons/facebookkk.png" alt=""></a>
+                <a href=""><img src="ASSETS/Icons/twitterrr.png" alt=""></a>
+                <a href=""><img src="ASSETS/Icons/instagramm.png" alt=""></a>
+                <a href=""><img src="ASSETS/Icons/linkedinn.png" alt=""></a>
+            </div>
+        </div>
+    </main>
+    <script src="ASSETS/Scripts/signuponly.js"></script>
+</body>
+</html>

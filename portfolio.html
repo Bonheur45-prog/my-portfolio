@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+    <link rel="stylesheet" href="ASSETS/styles/style.css">
+    <link rel="stylesheet" href="ASSETS/styles/portfolio.css">
+</head>
+<body>
+    <header class="header">
+        <div class="mobile-menu"><span>&#9776</span></div>
+        <div class="logo">
+           Bonh<span>press</span>
+        </div>
+
+       <nav class="navbar">
+       <a href="index.html">Home</a>
+       <a href="aboutMe.html">About me</a>
+       <a href="skills.html">Skills</a>
+       <a href="portfolio.html" class="active">Portfolio</a>
+       <a href="contacts.html">Contact</a>
+       </nav>
+
+       <div class="login-signup">
+           <a href="#">Login</a>
+       </div>
+   </header>
+    <!--sideBar starting-->
+    <div class="sidebar-menu">
+        <div class="my-logo">
+            Bonh<span> press</span>
+        </div>
+        <div class="hide-nav-bar">&times;</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutMe.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+        </ul>
+        <div class="social-medias">
+
+        </div>
+    </div>
+
+   <!--try started-->
+   <div class="login-form-container">
+        <span class="close-form-btn">&times;</span>
+        <h1>Login Here</h1>
+        <form action="" id="signin-form">
+            <div class="form-input-control">
+                <input type="email" name="userEmail" placeholder="Enter Email Here" id="userEmail">
+                <p class="error-level">error message!</p> 
+            </div>
+            <div class="form-input-control">
+                <input type="password" name="userPassword" placeholder="Enter Password Here" id="userPassword">
+                <img src="ASSETS/Icons/iris1.png" alt="">
+                <p class="error-level">error message</p> 
+            </div>
+            <div class="login-error">Incorrect Email or Password!!!</div>
+            <button type="submit">Login</button>
+        </form>
+        <p>Don't have an account?</p>
+        <p><a href="signuponly.html">Sign Up </a> Here!</p>
+
+        <h3>login with</h3>
+        <div class="social-medias-tosignIn">
+            <a href=""><img src="ASSETS/Icons/facebookkk.png" alt=""></a>
+            <a href=""><img src="ASSETS/Icons/twitterrr.png" alt=""></a>
+            <a href=""><img src="ASSETS/Icons/instagramm.png" alt=""></a>
+            <a href=""><img src="ASSETS/Icons/linkedinn.png" alt=""></a>
+        </div>
+    </div>
+<!--try ended-->
+   <!--the starting point of main section-->
+   <main class="portfolio-page-container">
+    <h1>This<span> is my </span>portfolio page</h1>
+    
+    <div class="portfolio-page-content">
+      <h2>Latest Projects</h2>
+      <div class="project-filter">
+        <ul>
+            <li>C++</li>
+            <li>Web App</li>
+            <li>Sites</li>
+        </ul>
+      </div>
+      <div class="projects-container">
+        <!--start of container-->
+            <div class="container">
+                <div class="project-thumbnail">
+                    <img src="ASSETS/Images/images1.jpg" alt="" class="thumbnail">
+                </div>
+                <h1>Project Name</h1>
+                <div class="project-description">
+                    <p>i made this program when i was a student
+                        it encrypts and decrypts the entered words 
+                        according to the key provided, it is simple
+                        but my favourite one i built it on my own
+                        from scrach using c++.  
+                    </p>
+                </div>
+                <div class="project-status">
+                    <label for="status">Done</label>
+                </div>
+                <div class="more-info">
+                    <a href="index.html">Get it</a>
+                </div>
+            </div>
+            <!--end of container-->
+            <!--start of container-->
+            <div class="container">
+                <div class="project-thumbnail">
+                    <img src="ASSETS/Images/download (1).jpg" alt="" class="thumbnail">
+                </div>
+                <h1>Project Name</h1>
+                <div class="project-description">
+                    <p>
+                    </p>
+                </div>
+                <div class="project-status">
+                    <label for="status">Done</label>
+                </div>
+                <div class="more-info">
+                    <a href="index.html">Get it</a>
+                </div>
+            </div>
+            <!--end of container-->
+            <!--start of container-->
+            <div class="container">
+                <div class="project-thumbnail">
+                    <img src="ASSETS/Images/download.jpg" alt="" class="thumbnail">
+                </div>
+                <h1>Keylogger</h1>
+                <div class="project-description">
+                    <p>This is a program the <span> records </span> everything
+                        you type on your keyboard and it has the
+                        functionality of sending email using <span>Batch
+                        script</span>  within the specific time interval.
+                    </p>
+                </div>
+                <div class="project-status">
+                    <label for="status">Done</label>
+                </div>
+                <div class="more-info">
+                    <a href="index.html">Get it</a>
+                </div>
+            </div>
+        <!--end of container-->
+      </div>
+    </div>
+   </main>
+   <!--footer starting-->
+   <footer>
+        <div class="social-networks">
+            <a href=""><img src="ASSETS/Icons/maill.png" alt=""></a>
+            <a href=""><img src="ASSETS/Icons/facebookkk.png" alt=""></a>
+            <a href=""><img src="ASSETS/Icons/twitterrr.png" alt=""></a>
+            <a href=""><img src="ASSETS/Icons/instagramm.png" alt=""></a>
+            <a href=""><img src="ASSETS/Icons/whatsapp.png" alt=""></a>
+            <a href=""><img src="ASSETS/Icons/linkedinn.png" alt=""></a>
+        </div>
+        <p>C 2024 copyright | all right reserved By Bonheur</p>
+    </footer>
+    <script type="module" src="ASSETS/Scripts/general.js">//show and hide loginform</script>
+</body>
+</html>

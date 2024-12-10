@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(27, 25, 25);
+    display: flex;
+    align-items: center;
+}
+.login-signup-page-container{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    width: 100%;
+    margin: 70px;
+    align-items: center;
+    justify-content: center;
+}
+.pagecontent{
+    padding: 20px 50px;  
+   
+}
+.pagecontent h1{
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+}
+.pagecontent h1 span{
+    color: rgb(255, 51, 0);
+    
+}
+.pagecontent p{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 80%;
+    font-family: Arial, sans-serif;
+    min-height: 60px;
+}
+.joinme{
+    margin-top: 30px;
+    padding: 10px 40px;
+    background: orangered;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+}
+.joinme:hover {
+    background: rgb(255, 30, 0);
+    color: rgb(207, 199, 199);
+    font-weight: bold;
+}
+.login-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.342);
+    margin-right: 30px;
+    padding: 20px;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-form-container h1{
+    color: orangered;
+    background: white;
+    border-radius: 8px;
+    width: 80%;
+    padding: 5px;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-form-container form{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+.form-input-control{
+    width: 95%;
+    position: relative;
+}
+.login-form-container form .form-input-control input{
+    height: 30px;
+    padding-left: 10px;
+    font-size: 18px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.007);
+    color: white;
+    border: none;
+    border-bottom: 2px solid orange;
+    margin-bottom: 20px;
+}
+.form-input-control img{
+    width: 20px;
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    right: 0;
+}
+.form-input-control .error-level {
+    position: absolute;
+    font-size: 12px;
+    top: 33px;
+    visibility: hidden;
+}
+.form-input-control.error .error-level{
+    visibility: visible;
+    color: red;
+}
+.login-form-container form button{
+    padding: 5px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: bol;
+    color: white;
+    background: orangered;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.login-form-container form button:hover{
+    color: rgb(223, 199, 199);
+    background: rgb(235, 52, 6);
+}
+.login-form-container p{
+    color: white;
+    font-size: 20px;
+}
+.login-form-container p a{
+    text-decoration: none;
+    color: orangered;
+    font-weight: bolder;
+}
+.login-form-container h3{
+    margin: 20px;
+    font-size: 25px;
+    color: white;
+}
+.social-medias-tosignIn{
+    display: flex;
+    align-items: center;
+}
+.social-medias-tosignIn a{
+    margin: 2px 5px;
+}
+.social-medias-tosignIn a img{
+    width: 30px;
+    padding: 3px;
+    border-radius: 50%;
+    background-color: white;
+}
+.social-medias-tosignIn a img:hover{
+    box-shadow: 0 0 10px orangered, 0 0 10px orangered;
+}

@@ -1,0 +1,269 @@
+/*about page*/
+h2{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+h2 span{
+    color: orangered;
+}
+.pageheader {
+    animation: pageheader 1s ease-in;
+}
+
+@keyframes pageheader{
+    from{
+        transform: scale(0.5) translateY(-60px);
+    }
+    to{
+        transform:scale(1) translateY(0);
+    }
+}
+h1{
+    color: orangered;
+    margin: 5px 0 25px 0;
+    text-align: center;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    background: rgb(180, 195, 207);
+    padding-top: 10px;
+}
+.personal-info{
+    display: flex;
+    gap: 40px;
+}
+.basic-info label{
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.my-picture{
+    width: 60%;
+}
+.info-header{
+    background: orangered;
+    color: white;
+    padding: 2px 15px;
+}
+.more-info p{
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.more-info p span{
+    font-size: 20px;
+    font-weight: 540;
+}
+.map-address{
+    height: 200px;
+}
+.my-contacts ul{
+    list-style: none;
+}
+.my-contacts ul li a{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(26, 25, 25);
+    margin-bottom: 10px;
+}
+.my-contacts ul li a:hover{
+    color:orangered;
+    transform: scale(1.03);
+}
+.my-contacts ul li a img{
+    width: 30px;
+    margin-right: 10px;
+}
+.person-background{
+    border-top: 4px solid white;
+    display: flex;
+    width: 95%;
+    margin: 10px 30px;
+    flex-direction: column;
+}
+.person-background-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+.background{
+    border:none;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgb(19, 17, 16),
+                0 0 20px rgb(19, 17, 16);
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .8s;
+    animation: backgroundanima 1;
+}
+.background:hover{
+    background: rgb(252, 250, 250);
+    transform: scale(1.01)translateY(-3px);
+}
+.background h1{
+    background: rgb(240, 210, 210);
+    padding: 5px;
+}
+.background-content{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 10px;
+}
+.background-content p{
+    font-size: 18px;
+    font-weight: 540;
+    line-height: 22px;
+    margin: 0 15px 20px 15px;
+}
+
+@keyframes backgroundanima {
+    from{
+        transform: translateY(-100px);
+        transform: scale(0.6);
+    }
+    to{
+        transform: translateY(0);
+        transform: scale(1);
+    }
+}
+.move-first1{
+    animation-duration: 1s;
+}
+.move-first2{
+    animation-duration: 1.5s;
+}
+.move-slow1{
+    animation-duration: 2.2s;
+}
+.move-slow2{
+    animation-duration: 2.7s;
+}
+/*responsive of aboutpage*/
+@media (max-width: 600px ){
+    .about-me{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .personal-info{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .basic-info,
+    .more-info,
+    .my-contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .basic-info label{
+        display: block;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    .my-picture{
+        width: 80%;
+    }
+    .info-header{
+        width: 100%;
+    }
+    .person-background{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .person-background-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .background{
+       max-width: 360px;
+       min-width: 300px;
+       margin: 2px 5px;
+    }
+    .map-address iframe{
+        height: 220px;
+        margin-bottom: 10px;
+    }
+}
+
+/*@media (max-width: 900px ){
+    .about-me{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .personal-info{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .basic-info,
+    .more-info,
+    .my-contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .my-contacts ul li a{
+        height: 35px;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    }
+    .my-contacts ul li a img{
+        width: 40px;
+        margin-right: 10px;
+    }
+    .my-picture{
+        width: 80%;
+    }
+    .info-header{
+        width: 100%;
+    }
+    .person-background{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .person-background-container{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+    .background{
+       max-width: 650px;
+       min-width: 600px;
+       margin: 2px 5px;
+    }
+    .map-address iframe{
+        height: 220px;
+        margin: 10px;
+    }
+}*/
